@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Div Element</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+    }
+    .horizontal-layout {
+      display: flex;
+      justify-content: left;
+      margin-bottom: 20px;
+    }
+    .box {
+      border-radius: 8px;
+      width: 200px;
+      box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
+      margin: 10px;
+      text-align: center;
+    }
+    .box img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px 8px 0 0;
+    }
+    .box h3 {
+      margin: 10px 0 5px;
+    }
+    .box p {
+      margin: 5px 0 10px;
+      color: grey;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .box p img {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      margin-right: 5px;
+    }
+    .box button {
+      background-color: rgb(0, 76, 255);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="horizontal-layout">
+    <div class="box">
+      <img src="img/7a.jpg" alt="Oliver">
+      <h3>Oliver</h3>
+      <p>
+        <img src="img/10a.jpg" alt="Profile">
+        2 mutual friends
+      </p>
+      <button>Add Friend</button>
+    </div>
+    <div class="box">
+      <img src="img/9.1.jpg" alt="Mimi">
+      <h3>Mimi</h3>
+      <p>
+        <img src="img/10a.jpg" alt="Profile">
+        3 mutual friends
+      </p>
+      <button>Add Friend</button>
+    </div>
+    <div class="box">
+      <img src="img/9.2.jpg" alt="Rex">
+      <h3>Rex</h3>
+      <p>
+        <img src="img/10a.jpg" alt="Profile">
+        4 mutual friends
+      </p>
+      <button>Add Friend</button>
+    </div>
+  </div>
+</body>
+</html>

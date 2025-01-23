@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined HTML</title>
+    <style>
+        /* Profile Card Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: rgb(240, 242, 245);
+        }
+
+        .card {
+            background: white;
+            padding: 16px;
+            border-radius: 16px;
+            width: 400px;
+            margin: 0 auto;
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        .profile {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .card img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            float: left;
+        }
+
+        .text {
+            display: block;
+            margin-left: 60px;
+        }
+
+        .name {
+            font-weight: bold;
+            font-size: 16px;
+            color: black;
+            margin: 0;
+            display: block;
+        }
+
+        .info {
+            font-size: 14px;
+            color: rgb(101, 103, 107);
+            margin: 4px 0;
+            display: block;
+        }
+
+        .card button {
+            background-color: rgb(29, 161, 242);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 14px;
+            cursor: pointer;
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        /* Video Content Styles */
+        .container {
+            font-family: Arial, sans-serif;
+            width: 420px;
+            margin: 20px auto;
+        }
+
+        .container img {
+            width: 400px;
+            height: 120px;
+            object-fit: cover;
+        }
+
+        .content {
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .content img {
+            margin-right: 10px;
+            width: 170px;
+            height: 120px;
+        }
+
+        .text-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        h4 {
+            margin: 0;
+            display: inline-block;
+        }
+
+        p {
+            margin-top: 10px;
+            display: block;
+            color: grey;
+            font-size: 14px;
+        }
+
+        /* Friend Box Styles */
+        .horizontal-layout {
+            display: flex;
+            justify-content: left;
+            margin-bottom: 20px;
+        }
+
+        .box {
+            border-radius: 8px;
+            width: 200px;
+            box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
+            margin: 10px;
+            text-align: center;
+        }
+
+        .box img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .box h3 {
+            margin: 10px 0 5px;
+        }
+
+        .box p {
+            margin: 5px 0 10px;
+            color: grey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box p img {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+
+        .box button {
+            background-color: rgb(0, 76, 255);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Profile Cards -->
+    <div class="card">
+        <div class="profile">
+            <img src="img/10a.jpg" alt="Profile">
+            <div class="text">
+                <p class="name">Oliver</p>
+                <p class="info">The Cat</p>
+                <p class="info">Popular</p>
+            </div>
+        </div>
+        <button>Follow</button>
+    </div>
+    <div class="card">
+        <div class="profile">
+            <img src="img/9.1.jpg" alt="Profile">
+            <div class="text">
+                <p class="name">Mimi</p>
+                <p class="info">Sleepy Cat</p>
+                <p class="info">Popular</p>
+            </div>
+        </div>
+        <button>Follow</button>
+    </div>
+    <div class="card">
+        <div class="profile">
+            <img src="img/9.2.jpg" alt="Profile">
+            <div class="text">
+                <p class="name">Rex</p>
+                <p class="info">Happy Bulldog</p>
+                <p class="info">Popular</p>
+            </div>
+        </div>
+        <button>Follow</button>
+    </div>
+
+    <!-- Video Content -->
+    <div class="container">
+        <div class="content">
+            <img src="img/10a.jpg" alt="">
+            <div class="text-content">
+                <h4>How to compete against CS degrees (as a self-taught dev)</h4>
+                <p>SuperSimpleDev<br>1.5K views | 4 months ago</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <img src="img/9.1.jpg" alt="">
+            <div class="text-content">
+                <h4>Which programming language to learn first 2022 (with charts)</h4>
+                <p>SuperSimpleDev<br>5.7K views | 11 months ago</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <img src="img/9.2.jpg" alt="">
+            <div class="text-content">
+                <h4>Frontend web development - a complete overview (2021)</h4>
+                <p>SuperSimpleDev<br>1K views | 4 months ago</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Friend Boxes -->
+    <div class="horizontal-layout">
+        <div class="box">
+            <img src="img/7a.jpg" alt="Oliver">
+            <h3>Oliver</h3>
+            <p>
+                <img src="img/10a.jpg" alt="Profile">
+                2 mutual friends
+            </p>
+            <button>Add Friend</button>
+        </div>
+        <div class="box">
+            <img src="img/9.1.jpg" alt="Mimi">
+            <h3>Mimi</h3>
+            <p>
+                <img src="img/10a.jpg" alt="Profile">
+                3 mutual friends
+            </p>
+            <button>Add Friend</button>
+        </div>
+        <div class="box">
+            <img src="img/9.2.jpg" alt="Rex">
+            <h3>Rex</h3>
+            <p>
+                <img src="img/10a.jpg" alt="Profile">
+                4 mutual friends
+            </p>
+            <button>Add Friend</button>
+        </div>
+    </div>
+</body>
+</html>
