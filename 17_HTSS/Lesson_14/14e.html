@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position</title>
+  <style>
+    body {
+      font-family: tahoma;
+    }
+    .container {
+      display: flex;
+      flex-direction: row;
+      background-color: white;
+      width: 700px;
+      border: 1px solid black;
+    }
+    img{
+      width: 40px;
+      object-fit: cover;
+      border-radius: 50%;
+      padding: 10px 20px 10px 20px;
+      position: relative;
+    }
+    .button {
+      position: fixed;
+      left: 500px;
+      top: 25px;
+    }
+    .button .b1 {
+      background-color: blue;
+      width: 80px;
+      color: white;
+      padding: 10px 5px;
+      border: none;
+      border-radius: 10px;
+    }
+    .button .b2 {
+      background-color: lightgrey;
+      width: 80px;
+      color: black;
+      padding: 10px 5px;
+      border: none;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div><img src="img/9.1.jpg" alt=""></div>
+    <h4>Oliver Cat</h4>
+    <div class="button">
+      <button class="b1">Add Friend</button>
+      <button class="b2" style="font-weight: bold;">Message</button>
+    </div>
+  </div>
+</body>
+</html>
