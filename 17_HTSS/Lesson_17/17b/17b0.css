@@ -1,0 +1,296 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  font-family: Tahoma;
+  box-sizing: border-box; 
+}
+
+body {
+  display: flex;
+}
+
+.headers {
+  display: flex; /* Menambahkan display flex */
+  align-items: center; /* Menyelaraskan item di tengah */
+  padding: 10px 20px;
+  background-color: white; /* Warna latar belakang header */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+  width: 100%; /* Memastikan header mengambil lebar penuh */
+  position: fixed; /* Memperbaiki posisi header */
+  top: 0; /* Menempatkan header di bagian atas */
+  z-index: 1000; /* Menempatkan header di atas konten lainnya */
+}
+.headers img.yt{
+  width: 40px; /* Atur lebar sesuai kebutuhan */
+  height: auto; /* Pertahankan rasio aspek */
+  margin: 0 0 0 25px;
+  align-items: center;
+  vertical-align: center;
+  justify-content: center;
+}
+
+.headers input {
+  width: 500px;
+  height: 35px;
+  border: 1px solid #d3d3d3;
+  border-radius: 2px;
+  padding: 0 10px;
+  margin-left: 300px;
+}
+
+.headers a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+  color: black;
+  font-size: 20px;
+}
+
+.nav {
+  width: 200px; /* Lebar navigasi */
+  background-color: #f9f9f9; /* Warna latar belakang navigasi */
+  height: 100vh; /* Tinggi navigasi penuh */
+  position: fixed; /* Memperbaiki posisi navigasi */
+  top: 50px; /* Menempatkan navigasi di bawah header */
+  left: 0; /* Menempatkan navigasi di sisi kiri */
+  margin-left: 20px;
+  padding-top: 20px; /* Menambahkan padding atas */
+}
+
+.nav ul {
+  padding: 0;
+}
+
+.nav li {
+  display: flex;
+  align-items: center; /* Menyelaraskan item di tengah */
+  cursor: pointer;
+  font-size: 14px; /* Ukuran font yang lebih besar */
+  padding: 10px; /* Menambahkan padding untuk item navigasi */
+  transition: background-color 0.3s; /* Transisi untuk efek hover */
+}
+
+.nav li:hover {
+  background-color: #e0e0e0; /* Efek hover */
+}
+
+.nav li img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px; /* Menambahkan jarak antara gambar dan teks */
+}
+
+.content {
+  display: flex;
+  margin: 0 0 0 200px;
+  padding: 70px 0 20px 28px;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.video {
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+}
+
+.video .thumbnail {
+  position: relative;
+  display: block; 
+}
+.video .thumbnail img{
+  width: 100%;
+  height: 180px;
+  display: block;
+  object-fit: cover;
+  object-position: top;
+}
+.video .thumbnail .duration {
+  position: absolute;
+  bottom: 8px;  
+  right: 8px;    
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 2px 4px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.info {
+  display: flex;
+  padding: 10px;
+}
+
+.info .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-top: 12px;
+}
+.text .title {
+  font-size: 14px;
+  font-weight: bold;
+}
+.text .name {
+  font-size: 13px;
+  color: grey;
+}
+.text .subs {
+  font-size: 13px;
+  color: grey;
+}
+
+
+@media screen and (min-width: 1200px) {
+  .nav {
+    width: 200px;
+  }
+
+  .headers input {
+    width: 500px;
+    margin: 0 440px;
+    
+  }
+
+  .content {
+    margin-left: 220px;
+  }
+
+  .video {
+    width: 300px;
+  }
+}
+@media (max-width:940px) {
+  .nav {
+    width: 200px;
+  }
+
+  .headers input {
+    width: 500px;
+    margin: 0 110px;
+    
+  }
+
+  .content {
+    margin-left: 220px;
+  }
+
+  .video {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav {
+    width: 160px;
+  }
+  
+  .headers img.yt{
+    height: auto; /* Pertahankan rasio aspek */
+    width: 20px;
+  }
+
+  .headers img.yt{
+    height: auto; /* Pertahankan rasio aspek */
+    width: 18px;
+  }
+  .headers a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+    color: black;
+    font-size: 17px;
+  }
+  .nav li {
+    flex-direction: row; /* Teks berada di bawah ikon */
+    text-align: center;
+  }
+  
+  .nav li img {
+    margin-right: 5px; /* Hapus jarak antara ikon dan teks */
+  }
+
+  .headers input {
+    width: 100%; /* Tombol search menyesuaikan lebar */
+    margin: 0 50px; /* Tombol search berada di tengah */
+  }
+  .content {
+    margin-left: 180px; /* Sesuaikan margin konten */
+    gap: 10px; /* Kurangi jarak antar video */
+  }
+
+}
+/* Media query untuk perangkat dengan lebar kurang dari 1200px */
+@media (max-width: 400px) {
+  .nav {
+    width: 80px;
+  }
+
+  .headers img.yt{
+    height: auto; /* Pertahankan rasio aspek */
+    width: 20px;
+  }
+  .headers a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+    color: black;
+    font-size: 17px;
+  }
+
+  .nav li {
+    flex-direction: column; /* Teks berada di bawah ikon */
+    text-align: center;
+  }
+  
+  .nav li img {
+    margin-right: 0; /* Hapus jarak antara ikon dan teks */
+  }
+  
+  .headers input {
+    width: 100%; /* Tombol search menyesuaikan lebar */
+    margin: 0 20px; /* Tombol search berada di tengah */
+  }
+
+  .content {
+    margin-left: 95px; /* Sesuaikan margin konten */
+    gap: 10px; /* Kurangi jarak antar video */
+  }
+
+  .video {
+    width: 240px;
+    height: 210px;
+  }
+  .video .thumbnail img{
+    width: 100%;
+    height: 110px;
+    display: block;
+    object-fit: cover;
+    object-position: top;
+  }
+  .info .avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 12px;
+  }
+  .text .title {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .text .name {
+    font-size: 10px;
+    color: grey;
+  }
+  .text .subs {
+    font-size: 10px;
+    color: grey;
+  }
+}
+
+/*

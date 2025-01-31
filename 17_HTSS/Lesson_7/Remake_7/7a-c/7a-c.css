@@ -1,0 +1,16 @@
+.satu {
+  width: 200px;
+  border-radius: 20px;
+}
+.dua {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.tiga {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}

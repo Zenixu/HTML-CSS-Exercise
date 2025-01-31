@@ -1,0 +1,76 @@
+body {
+  font-family: arial;
+}
+/* 9f */
+.f-container {
+  width: 200px;
+  height: auto;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+}
+.f-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+.f-p {
+  margin: 5px 0 0 10px;
+  font-weight: bold;
+}
+.f-btn {
+  background-color: rgb(0, 120, 255);
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 10px;
+}
+/* 9g */
+.g-container {
+  width: 200px;
+  height: auto;
+  display: inline-block;
+  margin: 0 7px;
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.4);
+}
+.g-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+.g-p {
+  margin: 5px 0 0 10px;
+  font-weight: bold;
+}
+.g-btn {
+  background-color: rgb(0, 120, 255);
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 4px;
+  margin: 8px 10px;
+}
+/* 9h */
+.h-container {
+  text-align: center;
+}
+.h-img img{
+  width: 350px;
+  margin: 0 auto; 
+  display: block;
+}
+.h-search input{
+  border: none;
+  padding: 15px 0 15px 20px;
+  width: 800px;
+  border-radius: 20px;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  margin: 0 auto;
+}
+.h-btn button{
+  background-color: whitesmoke;
+  border: none;
+  margin: 20px 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+}
